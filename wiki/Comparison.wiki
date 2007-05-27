@@ -47,6 +47,8 @@ if __name__ == "__main__":
     main()
 }}}
 
+We used SWI-Prolog version 5.6.34 (shared library) and PySWIP 0.1.1.
+
 These programs run 5 times and timed using UNIX `time` utility using the following command lines:
 
 For SWI-Prolog:
@@ -91,6 +93,8 @@ if __name__ == "__main__":
 }}}
 
 Note that, this is a modified version of the example in python-constraint source; the original code imposed more constraints which resulted in a much faster solution. I have taken out extra constraints to make the code solve the same problem in the previous section (i.e., made it more like the Prolog source).
+
+We used python-constraint 1.1 and PySWIP 0.1.1
 
 The programs run 5 times and timed using UNIX `time` utility using the following command lines:
 
