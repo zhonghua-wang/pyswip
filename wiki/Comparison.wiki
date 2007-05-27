@@ -63,8 +63,8 @@ $ time python sendmoney_ps_benchmark.py
 
 Here are the results:
 ||              || *pure SWI-Prolog* (_sec_) || *PySWIP* (_sec_) || _Result_          ||
-|| *Best*       || 0.065                     || 0.095            || PySWIP (0.030 sec) 0.46x slower  ||
-|| *Average*    || 0.084                     || 0.102            || PySWIP (0.018 sec) 0.21x slower  ||
+|| *Best*       || 0.065                     || 0.095            || PySWIP (0.030 sec) 1.46x slower  ||
+|| *Average*    || 0.084                     || 0.102            || PySWIP (0.018 sec) 1.21x slower  ||
 
 Note that, the percentages are very high because this is an easy problem for SWI-Prolog, so the overhead can't be seen clearly. *TODO* Compare them using a harder problem.
 
