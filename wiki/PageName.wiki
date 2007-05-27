@@ -31,11 +31,12 @@ letters = "S E N D M O R Y".split()
 prolog = PrologRunner()
 prolog.query("consult('money.pl')")
 for result in prolog.query("sendmore(X)"):
-	r = eval(result["X"])
-	for i, letter in enumerate(letters):
-		print letter, "=", r[i]
+    r = eval(result["X"])
+    for i, letter in enumerate(letters):
+        print letter, "=", r[i]
 
 print "That's all..."
+
 }}}
 
 And the result:
@@ -50,4 +51,3 @@ R = 8
 Y = 2
 That's all...
 }}}
-
