@@ -1,0 +1,12 @@
+#summary ChangeLog
+#labels Featured,Changelog
+= PySWIP ChangeLog =
+
+== 0.1.1 ==
+
+  * Added `queryGenerator` to PrologRunner, `query` calls `queryGenerator`.
+  * Added example _send more money_.
+
+== 0.1.0 ==
+
+  * Initial public announcement.
