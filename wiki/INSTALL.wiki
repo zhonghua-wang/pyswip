@@ -63,9 +63,7 @@ If you get an error, such as "libpl (shared) not found." or "FATAL ERROR: Resour
   #) Get a recent version of SWI-Prolog for Win32 from: http://www.swi-prolog.org/dl-stable.html and install it.
 
   #) You need to add SWI-Prolog's bin directory `C:\Program Files\pl\bin`) to _path_, here are two tutorials for that:  http://www.computerhope.com/issues/ch000549.htm and http://vlaurie.com/computers2/Articles/environment.htm
-
   #) Get a Windows installer version of PySWIP and install it.
-
   #) After you install it, you can test it with the following at your Python console:
 {{{
 >>> from pyswip.util import Prolog
