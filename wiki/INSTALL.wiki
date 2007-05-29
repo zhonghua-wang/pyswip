@@ -1,5 +1,5 @@
+#summary Install instructions for Linux and Win32
 #labels Featured,Phase-Deploy
-# Install instructions for Linux and Win32
 = PySWIP INSTALL =
 
 _(Updated for version 0.1.2)_
@@ -72,4 +72,3 @@ If you get an error, such as "libpl (shared) not found." or "FATAL ERROR: Resour
 >>> prolog = Prolog()
 >>> prolog.assertz("father(michael,john)")
 }}}
-
