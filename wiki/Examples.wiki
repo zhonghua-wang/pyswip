@@ -3,6 +3,8 @@
 
 = PySWIP Examples =
 
+*(updated for version 0.1.2)*
+
 == SEND MORE MONEY ==
 
 Finding valid and distinct integers for digits S, E, N, D, M, O, R and Y in the equation SEND + MORE = MONEY is a classical constraint programming problem.
@@ -25,18 +27,17 @@ sendmore(Digits) :-
 
 Save this file as `money.pl`. Here's the Python driver code:
 {{{
-from pyswip.util import PrologRunner
+from pyswip.util import Prolog
 
 letters = "S E N D M O R Y".split()
-prolog = PrologRunner()
-prolog.query("consult('money.pl')")
+prolog = Prolog()
+prolog.consult('money.pl')
 for result in prolog.query("sendmore(X)"):
     r = eval(result["X"])
     for i, letter in enumerate(letters):
         print letter, "=", r[i]
 
 print "That's all..."
-
 }}}
 
 And the result:
