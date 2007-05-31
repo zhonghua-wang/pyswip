@@ -11,6 +11,8 @@ We use the classic SEND + MORE = MONEY problem for comparisons, please see [Exam
 
 === SWI-Prolog vs PySWIP ===
 
+_(sample program deprecated since version 0.1.2)_
+
 [http://www.swi-prolog.org SWI-Prolog] has the clp library for solving integer constraint programming problems. You can use this library to solve constraint programming problems via PySWIP. In this section we try to find out how much overhead PySWIP imposes over calling/querying the _almost_ same prolog code with SW-Prolog.
 
 The following prolog code is used by both SWI-Prolog and PySWIP:
@@ -69,6 +71,8 @@ Here are the results:
 Note that, the percentages are very high because this is an easy problem for SWI-Prolog, so the overhead can't be seen clearly. *TODO* Compare them using a harder problem.
 
 === Python-Constraint vs PySWIP ===
+
+_(sample program deprecated since version 0.1.2)_
 
 [http://labix.org/python-constraint Python-Constraint] is a pure-Python package created by Gustavo Niemeyer for solving constraing programming problems. In this section we compare PySWIP and python-constraint.
 
