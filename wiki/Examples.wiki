@@ -3,7 +3,7 @@
 
 = PySWIP Examples =
 
-*(updated for version 0.1.2)*
+_(updated for version 0.1.2)_
 
 == SEND MORE MONEY ==
 
@@ -54,6 +54,8 @@ That's all...
 }}}
 
 == Register A Foreign Function ==
+
+_(Code at the SVN repository is required)_
 
 PySWIP includes a (currently incomplete) interface to SWI-Prolog's foreign language interface. With the use of of ctypes which is already imported, you can access and use this interface.
 
