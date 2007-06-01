@@ -59,7 +59,7 @@ _(updated for version 0.1.3)_
 
 PySWIP includes a (currently incomplete) interface to SWI-Prolog's foreign language interface. With the use of of ctypes which is already imported, you can access and use this interface.
 
-The following example adds a new function (or fact) to SWI-Prolog runtime, you can see the original code at: http://gollem.science.uva.nl/SWI-Prolog/Manual/foreigninclude.html#sec:9.6.17
+The following example adds a new prediacte to SWI-Prolog runtime, you can see the original code at: http://gollem.science.uva.nl/SWI-Prolog/Manual/foreigninclude.html#sec:9.6.17
 {{{
 from pyswip.prolog import Prolog
 from pyswip.easy import getAtomChars, unifyInteger, registerForeign
