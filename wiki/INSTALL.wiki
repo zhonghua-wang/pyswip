@@ -2,7 +2,7 @@
 #labels Featured,Phase-Deploy
 = PySWIP INSTALL =
 
-_(Updated for version 0.1.2)_
+_(Updated for version 0.1.3)_
 
 PySWIP requires SWI-Prolog as a shared library since it uses ctypes to access SWI-Prolog/C functions. The shared library is present in Win32 installer, but missing by default from the builds made directly from the source.
 
@@ -51,7 +51,7 @@ $ sudo python setup.py install
 }}}
   #) After you install it, you can test it with the following at your Python shell::
 {{{
->>> from pyswip.util import Prolog
+>>> from pyswip.prolog import Prolog
 >>> prolog = Prolog()
 >>> prolog.assertz("father(michael,john)")
 }}}
@@ -65,7 +65,7 @@ If you get an error, such as "libpl (shared) not found." or "FATAL ERROR: Resour
   #) Get a Windows installer version of PySWIP and install it.
   #) After you install it, you can test it with the following at your Python console:
 {{{
->>> from pyswip.util import Prolog
+>>> from pyswip.prolog import Prolog
 >>> prolog = Prolog()
 >>> prolog.assertz("father(michael,john)")
 }}}
