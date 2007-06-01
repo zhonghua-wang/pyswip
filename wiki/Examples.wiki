@@ -67,10 +67,8 @@ from pyswip.easy import getAtomChars, unifyInteger, registerForeign
 def atom_checksum(*a):
     s = getAtomChars(a[0])
     if s is not None:
-        sum = 0
-        for c in s:
-            sum += ord(c)&0xFF
-        return unifyInteger(a[1], sum&0xFF)
+        r = sum(ord(c)&0xFF for c in s)
+        return unifyInteger(a[1], r&0xFF)
     else:
         return False
 atom_checksum.arity = 2
@@ -78,5 +76,6 @@ atom_checksum.arity = 2
 p = Prolog()
 registerForeign(atom_checksum)
 print list(p.query("X='Python', atom_checksum(X, Y)"))
+
 }}}
 Outputs: `[{'Y': '130', 'X': 'Python'}]`
