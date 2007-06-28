@@ -1,6 +1,15 @@
 #summary ChangeLog
-#labels Featured,Changelog
+#labels Featured
 = PySWIP ChangeLog =
+
+== 0.2.0 ==
+
+  * All names are included with ``from pyswip import ...``
+  * New *Pythonic* interface
+  * Prolog.query returns real Python datatypes
+  * Markus Triska's Sudoku Solver
+  * Prolog module support
+  * Foreign functions retrieve Python datatypes.
 
 == 0.1.3 ==
 
