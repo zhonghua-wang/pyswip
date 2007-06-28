@@ -1,5 +1,4 @@
 #summary Comparison of PySWIP with different Python/Prolog, inference and constraint packages
-#labels Featured,Comparison
 
 = Comparison of PySWIP with Other Prolog and Constraint Systems =
 
