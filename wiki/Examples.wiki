@@ -3,7 +3,7 @@
 
 = PySWIP Examples =
 
-_(updated for version 0.1.3)_
+_(updated for version 0.2)_
 
 == SEND MORE MONEY ==
 
@@ -27,13 +27,13 @@ sendmore(Digits) :-
 
 Save this file as `money.pl`. Here's the Python driver code:
 {{{
-from pyswip.prolog import Prolog
+from pyswip import Prolog
 
 letters = "S E N D M O R Y".split()
 prolog = Prolog()
 prolog.consult('money.pl')
 for result in prolog.query("sendmore(X)"):
-    r = eval(result["X"])
+    r = result["X"]
     for i, letter in enumerate(letters):
         print letter, "=", r[i]
 
@@ -55,27 +55,26 @@ That's all...
 
 == Register A Foreign Function ==
 
-_(updated for version 0.1.3)_
+_(updated for version 0.2)_
 
 PySWIP includes a (currently incomplete) interface to SWI-Prolog's foreign language interface. With the use of of ctypes which is already imported, you can access and use this interface.
 
 The following example adds a new prediacte to SWI-Prolog runtime, you can see the original code at: http://gollem.science.uva.nl/SWI-Prolog/Manual/foreigninclude.html#sec:9.6.17
 {{{
-from pyswip.prolog import Prolog
-from pyswip.easy import getAtomChars, unifyInteger, registerForeign
+from pyswip import Prolog, registerForeign
+
+from pyswip import Prolog, registerForeign, Atom
 
 def atom_checksum(*a):
-    s = getAtomChars(a[0])
-    if s is not None:
-        r = sum(ord(c)&0xFF for c in s)
-        return unifyInteger(a[1], r&0xFF)
+    if isinstance(a[0], Atom):
+        r = sum(ord(c)&0xFF for c in str(a[0]))
+        a[1].value = r&0xFF
+        return True
     else:
         return False
-atom_checksum.arity = 2
 
 p = Prolog()
-registerForeign(atom_checksum)
+registerForeign(atom_checksum, arity=2)
 print list(p.query("X='Python', atom_checksum(X, Y)"))
-
 }}}
 Outputs: `[{'Y': '130', 'X': 'Python'}]`
