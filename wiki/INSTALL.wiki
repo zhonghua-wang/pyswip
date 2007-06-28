@@ -65,7 +65,7 @@ If you get an error, such as "libpl (shared) not found." or "FATAL ERROR: Resour
   #) Get a Windows installer version of PySWIP and install it.
   #) After you install it, you can test it with the following at your Python console:
 {{{
->>> from pyswip.prolog import Prolog
+>>> from pyswip import Prolog
 >>> prolog = Prolog()
 >>> prolog.assertz("father(michael,john)")
 }}}
