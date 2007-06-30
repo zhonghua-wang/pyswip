@@ -61,8 +61,6 @@ PySWIP includes a (currently incomplete) interface to SWI-Prolog's foreign langu
 
 The following example adds a new prediacte to SWI-Prolog runtime, you can see the original code at: http://gollem.science.uva.nl/SWI-Prolog/Manual/foreigninclude.html#sec:9.6.17
 {{{
-from pyswip import Prolog, registerForeign
-
 from pyswip import Prolog, registerForeign, Atom
 
 def atom_checksum(*a):
