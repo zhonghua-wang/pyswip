@@ -1,6 +1,6 @@
 #summary Shows how to simulate having multiple SWI-Prolog knowledgebases
 
-= Introduction =
+= Simulating Multiple Knowledgebases =
 
 We can have only one prolog knowledgebase for each process as
 confirmed in a recent thread (for JPL) (this is a limitation of the
@@ -10,7 +10,7 @@ http://www.nabble.com/JPL-error-t3911134.html
 In that thread, Jan Wielemaker also says that, predicates are local to modules,
 so we can use modules to simulate many databases.
 
-= Example =
+== Example ==
 
 Here's  an example to use modules to have multiple knowledgebases. The same example is also present in the examples dir. This example uses the Pythonic interface.
 {{{
@@ -54,6 +54,6 @@ modules.
 
 Hope it helps.
 
-= Thanks =
+== Thanks ==
 
 Thanks to Eli Golovinsky who brought the issue to my attention.
