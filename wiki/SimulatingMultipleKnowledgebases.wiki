@@ -40,6 +40,15 @@ q = Query(parent(X, "bob"), module=test2)
 while q.nextSolution():
     print X.value
 }}}
+Outputs:
+{{{
+knowledgebase test1
+john
+jane
+knowledgebase test2
+mike
+gina
+}}}
 It shouldn't be hard to write a class that automatically create new
 modules.
 
