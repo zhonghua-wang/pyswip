@@ -11,5 +11,5 @@
 
 = Special Thanks =
 
-  * Jan Wielemaker (SWI-Prolog's creator) for being so helpful for SWI-Prolog related questions.
+  * Jan Wielemaker (SWI-Prolog's creator) for being so helpful in SWI-Prolog related questions.
   * Nathan Denny (pyswip.Prolog code was based on his public domain `prolog.py`: http://www.ahsc.arizona.edu/~schcats/projects/docs/prolog-0.2.0.html)
