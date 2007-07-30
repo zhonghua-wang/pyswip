@@ -3,8 +3,8 @@
 = Introduction =
 
 We can have only one prolog knowledgebase for each process as
-confirmed in a recent thread [for JPL] [this is a limitation of the
-SWI-Prolog foreign language interface]:
+confirmed in a recent thread (for JPL) (this is a limitation of the
+SWI-Prolog foreign language interface):
 http://www.nabble.com/JPL-error-t3911134.html
 
 In that thread, Jan Wielemaker also says that, predicates are local to modules,
