@@ -15,6 +15,10 @@ This document contains questions and answers gathered mainly from PySWIP mailing
 
 *A:* Yes, see [HowToLimitQueryRunningTime].
 
+*3. Q:* How can I run multiple queries with distinct data?
+
+*A:* See [HowToSimulateMultipleKnowledgebases].
+
 = Errors and Bugs =
 
 *1. Q:* When I import PySWIP, I get:
