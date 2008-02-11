@@ -3,6 +3,12 @@
 
 = Simulating Multiple Knowledgebases =
 
+== Problem ==
+
+You want to run two separate queries through Prolog, each with its own data/
+
+== Solution ==
+
 We can have only one prolog knowledgebase for each process as
 confirmed in a recent thread (for JPL) (this is a limitation of the
 SWI-Prolog foreign language interface):
@@ -11,9 +17,9 @@ http://www.nabble.com/JPL-error-t3911134.html
 In that thread, Jan Wielemaker also says that, predicates are local to modules,
 so we can use modules to simulate many databases.
 
-== Example ==
+=== Example ===
 
-Here's  an example to use modules to have multiple knowledgebases. The same example is also present in the examples dir. This example uses the Pythonic interface.
+Here's  an example to use modules to have multiple knowledgebases. The same example is also present in the {{{examples}}} directory. This example uses the Pythonic interface.
 {{{
 from pyswip import *
 
@@ -54,9 +60,3 @@ gina
 }}}
 It shouldn't be hard to write a class that automatically create new
 modules.
-
-Hope it helps.
-
-== Thanks ==
-
-Thanks to Eli Golovinsky who brought the issue to my attention.
