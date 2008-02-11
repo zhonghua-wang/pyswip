@@ -33,12 +33,14 @@ X = Variable()
 q = Query(parent(X, "bob"), module=test1)
 while q.nextSolution():
     print X.value
+q.closeQuery()
 
 print "knowledgebase test2"
 
 q = Query(parent(X, "bob"), module=test2)
 while q.nextSolution():
     print X.value
+q.closeQuery()
 }}}
 Outputs:
 {{{
