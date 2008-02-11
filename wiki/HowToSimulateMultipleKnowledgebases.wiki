@@ -3,9 +3,8 @@
 
 = Simulating Multiple Knowledgebases =
 
-== Problem ==
-
-You want to run two separate queries through Prolog, each with its own data/
+== Problem == 
+You want to run two separate queries through Prolog, each with its own data.
 
 == Solution ==
 
@@ -58,5 +57,5 @@ knowledgebase test2
 mike
 gina
 }}}
-It shouldn't be hard to write a class that automatically create new
+It shouldn't be hard to write a class that automatically creates new
 modules.
