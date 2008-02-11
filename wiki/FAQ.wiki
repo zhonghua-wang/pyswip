@@ -1,4 +1,4 @@
-#summary Frequently Asked Questions about PySWIP
+#summary Frequently Asked Questions about PySWIP.
 #labels Featured,FAQ
 
 = Introduction =
