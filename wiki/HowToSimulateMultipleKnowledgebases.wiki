@@ -24,18 +24,15 @@ from pyswip import Prolog
 p = Prolog() 
 
 # Adding facts and rules to _test_ module:
-
 p.assertz('test:a(z)') 
 p.assertz('test:b(z)') 
 p.assertz('test:(c(X):-a(X),b(X))')
 
 # Adding facts to _othermod_ module:
-
 p.assertz('othermod:a(z)') 
 p.assertz('othermod:b(z)') 
 
 # Querying _test_ module:
-
 print list(p.query('test:c(X)'))
 }}}
  
