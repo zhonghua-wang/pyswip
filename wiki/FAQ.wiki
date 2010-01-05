@@ -41,3 +41,7 @@ This document contains questions and answers gathered mainly from PySWIP mailing
 }}}
 
 *A:* Upgrade your PySWIP to at least version 0.2.2.
+
+*3. Q:* I can't even run the sample programs, since PySWIP segfaults!
+
+*A:* PySWIP doesn't work on 64 bit systems, even if you install it on a 32 bit virtual machine running on a 64 bit host.
