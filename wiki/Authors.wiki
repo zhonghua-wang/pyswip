@@ -9,6 +9,7 @@
 
   * Markus Triska contributed Prolog sudoku solver.
   * Sebastian Höhn contributed a patch which enables running PySWIP on Mac OS-X.
+  * Manuel Rotter
 
 = Special Thanks =
 
