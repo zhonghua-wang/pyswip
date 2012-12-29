@@ -44,4 +44,4 @@ This document contains questions and answers gathered mainly from PySWIP mailing
 
 *3. Q:* I can't even run the sample programs, since PySWIP segfaults!
 
-*A:* PySWIP doesn't work on 64 bit systems, even if you install it on a 32 bit virtual machine running on a 64 bit host.
+*A:* PySWIP still has some problems with 64 bit systems. Please open an issue and post an example code that we'll try to look at that!
