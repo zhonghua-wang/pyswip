@@ -1,9 +1,13 @@
-#summary Authors and contributors of the project
+#summary Authors, maintainers and contributors of the project
 #labels Featured
 
 = Author =
 
   * Yuce Tekol
+
+= Maintainer =
+
+  * Rodrigo Starr
 
 = Contributors =
 
@@ -13,6 +17,7 @@
   * Rodrigo Starr
   * dia.aljrab
   * dylan-google@dylex.net
+  * jpthompson23
 
 = Special Thanks =
 
