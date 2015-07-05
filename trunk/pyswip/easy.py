@@ -155,7 +155,10 @@ class Variable(object):
         else:
             raise
 
-        t = PL_new_term_ref()
+        if self.handle is None:
+            t = PL_new_term_ref(self.handle)
+        else:
+            t = PL_copy_term_ref(self.handle)
         fun(t, value)
         self.handle = t
 
@@ -217,7 +220,7 @@ class Functor(object):
             try:
                 self.__value = self.func[self.handle](self.arity, *self.args)
             except KeyError:
-                self.__value = "Functor%d" % self.handle
+                self.__value = str(self)
 
     def fromTerm(cls, term):
         """Create a functor from a Term or term handle."""
@@ -255,12 +258,14 @@ class Functor(object):
 
     def __str__(self):
         if self.name is not None and self.arity is not None:
-            return "%s(%d)" % (self.name, self.arity)
+            return "%s(%s)" % (self.name,
+                               ', '.join([str(arg) for arg in self.args]))
         else:
             return self.__repr__()
 
     def __repr__(self):
-        return "".join(["Functor(", ",".join(str(x) for x in [self.handle,self.arity]+self.args), ")"])
+        return "".join(["Functor(", ",".join(str(x) for x
+            in [self.handle,self.arity]+self.args), ")"])
 
     def __eq__(self, other):
         if type(self) != type(other):
@@ -299,7 +304,7 @@ def putTerm(term, value):
     elif isinstance(value, list):
         putList(term, value)
     elif isinstance(value, Atom):
-        print "ATOM"
+        print("ATOM")
     elif isinstance(value, Functor):
         PL_put_functor(term, value.handle)
     else:
